@@ -8,11 +8,30 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-y: hidden;
+    overflow-x: hidden;
     font-family: 'Lato',sans-serif;
 }
 :root{
     --Primary:#fff;
+}
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    width: 13px;
+    /* background: #171628; */
+    border-left: 0px solid var(--tertiary);
+    border-right: 0px solid var(--tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3c2355;
+    width: 0%;
+    height: 35%;
+    transition: 0.5 ease;
+    cursor: pointer;
+    /* border-radius: 12px; */
 }
 body {
    
@@ -183,3 +202,74 @@ list-style: none;
     background-color: #fff;
     color: #000;
 }
+.body .category{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+.body .category h2{
+    text-align: center;
+    margin: 1rem;
+    color: #017dc4;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+    font-size: 2rem;
+}
+.body .category .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 0 4rem; */
+    max-width: 90vw;
+}
+.body .category .main .img img{
+    max-width: 280px;
+    margin: 1rem;
+}
+.body .category .main .img{
+    position: relative;
+    margin: 1rem;
+}
+.body .category .main .img img::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    /* width: 50%;
+    height: 50%; */
+    background-color: #017dc4;
+    /* z-index: 1; */
+}
+.body .category .main .img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    /* width: 200px;
+    height: 264px; */
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .body .category .main .img::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+.body .category .main .img:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  }
+  
