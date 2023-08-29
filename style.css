@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap'); */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    font-family: 'Lato',sans-serif;
+}
+:root{
+    --Primary:#fff;
+}
+body {
+   
+}
+
+.body .homesection {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1508255139162-e1f7b7288ab7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* You might need to adjust the position depending on your design */
+    background-position: center;
+}
+
+.body .homesection .nav {
+    width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    /* border-radius: 36px; */
+    backdrop-filter: blur(10px);
+    padding: 0 1rem;
+}
+
+.body .homesection .nav .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.body .homesection .nav .right {
+    min-width: 50vw;
+    color: var(--Primary);
+}
+
+.body .homesection .nav .right ul {
+    display: flex;
+    justify-content: space-around;
+list-style: none;
+}
+.body .homesection .nav .right ul a{
+    text-decoration: none;
+    color: inherit;
+  
+    font-weight: 500;
+   
+}
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--Primary);
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.body .homesection .nav img {
+    width: 38px;
+    margin-right: 0.6rem;
+}
+.body .homesection .main{
+    padding: 1rem 4rem;
+    color: var(--Primary);
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.body .homesection .main span{
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 36px;
+    backdrop-filter: blur(10px);
+    padding: 0.8rem;
+    margin: 1rem 0;
+    width: fit-content;
+}
+.body .homesection .main span p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.body .homesection .main h2{
+    font-size: 4.6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.body .homesection .main h4{
+    font-size: 8.6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.body .homesection .main button{
+    padding: 16px 32px;
+    background: none;
+    border: 1px solid var(--Primary);
+    border-radius: 36px;
+
+}
+.body .homesection .main button a{
+    color: var(--Primary);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.body .homesection .bottom{
+    min-height: 30vh;
+    display: flex;
+  align-items: center;
+    justify-content: space-between;
+}
+.body .homesection .bottom .boxcontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.body .homesection .bottom .boxcontent .box{
+    max-width: 420px;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--Primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .homesection .bottom .boxcontent .box p{
+    margin-right: 1rem;
+}
+.body .homesection .bottom .boxcontent .box i{
+    padding: 0.4rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 36px;
+    backdrop-filter: blur(10px);
+    margin-left: 1rem;
+}
+.body .homesection .bottom .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.body .homesection .bottom .icons i{
+    color: var(--Primary);
+    padding: 0.4rem;
+   margin: 0.1rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 36px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--Primary);
+    transition: all 0.2s ease-in-out;
+}
+.body .homesection .bottom .icons i:hover{
+    background-color: #fff;
+    color: #000;
+}
