@@ -532,8 +532,8 @@ align-items: center;
     /* margin: 1rem; */
 }
 .body .qualitycard .cardscontainer .qcard{
-    max-width: 320px;
-    min-height: 300px;
+    max-width: 280px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
