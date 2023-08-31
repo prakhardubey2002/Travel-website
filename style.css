@@ -527,13 +527,13 @@ align-items: center;
 .body .qualitycard .cardscontainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     /* margin: 1rem; */
 }
 .body .qualitycard .cardscontainer .qcard{
     max-width: 280px;
-    min-height: 320px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -545,6 +545,7 @@ align-items: center;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    /* background-color: #00dbde; */
 }
 /* .body .qualitycard .cardscontainer .qcard::after{
     content: '';
@@ -574,6 +575,7 @@ align-items: center;
     border: 1px solid black;
     border-radius: 50rem;
     z-index: 10;
+    margin: 1rem 0;
 }
 .description{
     min-height: 80vh;
