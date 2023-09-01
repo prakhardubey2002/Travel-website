@@ -1014,9 +1014,7 @@ body {}
         padding: 40px 15px 640px;
         position: relative;
     }
-    .footer-copyright{
-        display: none;
-    }
+    
 }
 
 @media (min-width:480px) and (max-width:599px) {
@@ -1198,5 +1196,14 @@ body {}
     .card {
         max-width: 50vw;
         margin: 0.4rem;
+    }
+    .footer-copyright{
+        display: none;
+    }
+    .footer-copyright-wrapper{
+        display: none;
+    }
+    .footer-copyright-text{
+        display: none;
     }
 }
