@@ -1011,7 +1011,7 @@ body {}
         margin-left: auto;
         margin-right: auto;
         max-width: 1230px;
-        padding: 40px 15px 740px;
+        padding: 40px 15px 600px;
         position: relative;
     }
     
@@ -1205,5 +1205,24 @@ body {}
     }
     .footer-copyright-text{
         display: none;
+    }
+    .footer-call-to-action-button {
+        background-color: #47a985;
+        border-radius: 21px;
+        color: #fffff2;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: .1em;
+        line-height: 18px;
+        padding: 6px 15px;
+        margin: 0 10px 10px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color .2s;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid #fff;
+        text-align: center;
     }
 }
