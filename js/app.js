@@ -31,11 +31,39 @@ var swiper = new Swiper(".slide-container", {
     },
   },
 });
-var parentDiv = document.querySelector('.contbox'); // Assuming .contbox is the parent div containing your list elements
-var list = parentDiv.querySelectorAll('.barhead');
-var desc= parentDiv.querySelector()
-for (let i = 0; i < list.length; i++) {
-  list[i].addEventListener('click', function() {
-    
-  });
-}
+// var parentDiv = document.querySelector('.contbox'); // Assuming .contbox is the parent div containing your list elements
+// var list = parentDiv.querySelectorAll('.barhead');
+// var desc= parentDiv.querySelector()
+// for (let i = 0; i < list.length; i++) {
+//   list[i].addEventListener('click', function() {
+//     console.log("hi")
+//   });
+// }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const filteredData = document.querySelectorAll('.filtered-data div');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const category = this.getAttribute('data-filter');
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                filterData(category);
+            });
+        });
+
+        function filterData(category) {
+            filteredData.forEach(item => {
+                const dataCategory = item.getAttribute('data-category');
+                if (category === 'all' || category === dataCategory) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Initially show the "Description" content
+        filterData('option1');
+    });
