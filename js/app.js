@@ -31,15 +31,6 @@ var swiper = new Swiper(".slide-container", {
     },
   },
 });
-// var parentDiv = document.querySelector('.contbox'); // Assuming .contbox is the parent div containing your list elements
-// var list = parentDiv.querySelectorAll('.barhead');
-// var desc= parentDiv.querySelector()
-// for (let i = 0; i < list.length; i++) {
-//   list[i].addEventListener('click', function() {
-//     console.log("hi")
-//   });
-// }
-
     document.addEventListener('DOMContentLoaded', function () {
         const filterButtons = document.querySelectorAll('.filter-button');
         const filteredData = document.querySelectorAll('.filtered-data div');
