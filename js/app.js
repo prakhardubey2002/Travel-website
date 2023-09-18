@@ -100,29 +100,46 @@ var x = setInterval(function () {
     document.getElementById("seconds").innerHTML = "00";
   }
 }, 1000);
-// script.js
 
-const imageContainer = document.querySelector('.image-container');
-const popupImage = document.getElementById('popup-image');
 
-// Function to check if an element is in the viewport
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
 
-// Function to handle the animation when the target section is in the viewport
-function animateImage() {
-  if (isInViewport(imageContainer)) {
-    imageContainer.style.transform = 'scale(1)'; // Scale the image to 100%
-    window.removeEventListener('scroll', animateImage); // Remove the scroll event listener once animation is triggered
-  }
-}
+// const imageContainer = document.querySelector('.image-container');
+// const popupImage = document.getElementById('popup-image');
 
-// Attach a scroll event listener to trigger the animation
-window.addEventListener('scroll', animateImage);
+// // Function to check if an element is in the viewport
+// function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//       rect.top >= 0 &&
+//       rect.left >= 0 &&
+//       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//       );
+//     }
+    
+//     // Function to handle the animation when the target section is in the viewport
+//     function animateImage() {
+//       if (isInViewport(imageContainer)) {
+//         imageContainer.style.transform = 'scale(1)'; // Scale the image to 100%
+//         popupImage.classList.add('animate__bounceIn');
+//         debugger
+//         window.removeEventListener('scroll', animateImage); // Remove the scroll event listener once animation is triggered
+//     }
+// }
+
+// // Function to debounce the scroll event
+// function debounce(func, wait) {
+//     let timeout;
+//     return function () {
+//         const context = this;
+//         const args = arguments;
+//         clearTimeout(timeout);
+//         timeout = setTimeout(() => {
+//             func.apply(context, args);
+//         }, wait);
+//     };
+// }
+
+// // Attach a debounced scroll event listener to trigger the animation
+// window.addEventListener('scroll', debounce(animateImage, 100));
+
