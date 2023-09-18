@@ -64,26 +64,30 @@ body {}
     /* padding: 1rem 2.8rem; */
     color: #fff;
 }
-.body .bannersticky .rowx{
+
+.body .bannersticky .rowx {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
 
 }
+
 .body .bannersticky .containert .counters {
     display: flex;
     flex-direction: row;
     font-size: 2.4rem;
 }
-.body .bannersticky .containert .counters .counter{
+
+.body .bannersticky .containert .counters .counter {
     margin: 0.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.body .bannersticky .containert .counters p{
+
+.body .bannersticky .containert .counters p {
     font-size: 0.8rem;
 }
 
@@ -96,11 +100,13 @@ body {}
     transition: 0.2s all ease-in-out;
     transform-origin: top;
 }
-.body .bannersticky button:hover{
+
+.body .bannersticky button:hover {
     background-color: #fff;
-    border: 1px solid  black;
+    border: 1px solid black;
     color: black;
 }
+
 .body .bannersticky button a {
     text-decoration: none;
     color: inherit;
@@ -330,7 +336,7 @@ body {}
 }
 
 .body .category .main .img img::after {
-   
+
     position: absolute;
     top: 0;
     left: 0;
@@ -358,7 +364,7 @@ body {}
 }
 
 .body .category .main .img::after {
-    
+
     content: "";
     z-index: -1;
     position: absolute;
@@ -812,7 +818,8 @@ body {}
 .filtered-data>*>ul {
     margin-left: 1.2rem;
 }
-.filtered-data button{
+
+.filtered-data button {
     padding: 10px 20px;
     background: #3086a7;
     border: 1px solid var(--Primary);
@@ -822,16 +829,19 @@ body {}
     transform-origin: top;
     margin: 1rem 0;
 }
-.filtered-data button a{
+
+.filtered-data button a {
     text-decoration: none;
     color: inherit;
 }
+
 .filtered-data p[data-category="all"],
 .filtered-data p[data-category="option1"] {
     display: block;
 }
+
 /* Review */
-.review{
+.review {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -839,24 +849,27 @@ body {}
     padding: 2rem;
     min-height: 100vh;
     max-width: 100vw;
-    background: #11998e;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #38ef7d, #11998e);
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
 }
-.review h2{
+
+.review h2 {
     color: var(--Primary);
     font-size: 35px;
     font-weight: 600;
 }
-.review img{
+
+.review img {
     max-width: 100vw;
     max-height: 100vh;
 }
-.review .mobile{
+
+.review .mobile {
     display: none;
 }
+
 /* Footer css */
 .pg-footer {
     font-family: 'Roboto', sans-serif;
@@ -1109,7 +1122,8 @@ body {}
     color: #fff;
     text-decoration: none;
 }
-.footercopyright{
+
+.footercopyright {
     width: 100vw;
     background-color: #11998e;
     color: var(--Primary);
@@ -1259,7 +1273,7 @@ body {}
     .body .qualitycard .cardscontainer .qcard {
         max-width: 260px;
         min-height: 260px;
-        
+
     }
 
     .body .qualitycard .cardscontainer .qcard h2 {
@@ -1291,38 +1305,47 @@ body {}
     .footer-content-column {
         max-width: 40vw;
     }
-    .body .bannersticky{
+
+    .body .bannersticky {
         font-size: 0.5rem;
         max-width: 100vw;
         overflow: hidden;
     }
-    .body .bannersticky .rowx{
+
+    .body .bannersticky .rowx {
         width: fit-content;
         flex-direction: column;
         align-items: flex-start;
     }
-    .body .bannersticky .containert .counters{
+
+    .body .bannersticky .containert .counters {
         font-size: 1rem;
     }
-    .body .bannersticky .containert .counters p{
+
+    .body .bannersticky .containert .counters p {
         font-size: 0.5rem;
     }
-    .body .bannersticky button{
+
+    .body .bannersticky button {
         padding: 8px 16px;
     }
-    .review{
+
+    .review {
         height: auto;
     }
-    .review img{
+
+    .review img {
         height: auto;
         max-width: 90vw;
     }
-    .review .mobile{
+
+    .review .mobile {
         display: block;
-     
+
 
     }
-    .review .desktop{
+
+    .review .desktop {
         display: none;
     }
 }
@@ -1375,9 +1398,11 @@ body {}
         margin: 0.5rem;
 
     }
-    .body .qualitycard .cardscontainer .qcard h2{
+
+    .body .qualitycard .cardscontainer .qcard h2 {
         font-size: 0.8rem;
     }
+
     .body .qualitycard .cardscontainer .qcard p {
         font-size: 10px;
         text-align: justify;
