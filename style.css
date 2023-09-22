@@ -15,6 +15,7 @@ html {
 
 :root {
     --Primary: #fff;
+    --Secondary:#3086a7;
 }
 
 ::-webkit-scrollbar {
@@ -739,6 +740,7 @@ body {}
     justify-content: center;
     align-items: center;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    min-height: 80vh;
 
 }
 
@@ -1128,7 +1130,7 @@ body {}
 
 .footercopyright {
     width: 100vw;
-    background-color: #11998e;
+    background-color: var(--Secondary);
     color: var(--Primary);
     min-height: 8vh;
     display: flex;
