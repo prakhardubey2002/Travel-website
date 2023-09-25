@@ -116,7 +116,7 @@
                         we mean it.</p>
                 </div>
                 <div class="qcard">
-                    <lottie-player class="animation" src="./lottiejson/agent.json" background="transparent" speed="1"
+                    <lottie-player class="animation" src="./lottiejson/security.json" background="transparent" speed="1"
                         loop autoplay></lottie-player>
                     <h2> Transparency & Security</h2>
                     <p>All the Itineraries are backed up by a strong ground team that monitors every route and condition
@@ -124,7 +124,7 @@
                     </p>
                 </div>
                 <div class="qcard">
-                    <lottie-player class="animation" src="./lottiejson/agent.json" background="transparent" speed="1"
+                    <lottie-player class="animation" src="./lottiejson/co-traveller.json" background="transparent" speed="1"
                         loop autoplay></lottie-player>
                     <h2>Co-travellers Filtering</h2>
                     <p>Group trips are fun when you have like-minded fellow travelers. We assure that through a
@@ -132,7 +132,7 @@
                     </p>
                 </div>
                 <div class="qcard">
-                    <lottie-player class="animation" src="./lottiejson/agent.json" background="transparent" speed="1"
+                    <lottie-player class="animation" src="./lottiejson/hassle-free.json" background="transparent" speed="1"
                         loop autoplay></lottie-player>
                     <h2>Hassle free experience</h2>
                     <p>Our entire team puts rigorous efforts on ground to make sure your experience is a top notch one.
@@ -160,36 +160,42 @@
                     <div class="filtered-data">
                         <div data-category="option1">Description
 
-                            Bir is a village located in the west of Joginder Nagar Valley in the state of Himachal
-                            Pradesh in northern India. Bir is a noted center for ecotourism, spiritual studies, and
-                            meditation. Bir is also home to a Tibetan refugee settlement with several Buddhist
-                            monasteries and a large stupa.
+                            Dive into a 4-night, 5-day escapade in the enchanting Kashmir Valley! Lose yourself in the
+                            scenic vistas, from the pristine Dal Lake in Srinagar to the majestic landscapes of Gulmarg.
+                            Taste the local flavours, embrace the culture, and create memories that linger. Come, let's
+                            paint your travel diary with the hues of Kashmir!
                             <br>
                             <br>
-                            Bir-Billing is a Paragliding Destination in the heart of Himalaya’s near famous tourist
-                            destination Dharamshala in Himachal Pradesh. This was “First Paragliding World Cup of India.
-                            ” This event happened in the month of October, 2015.”
-                            <br>
-                            <br>
-                            During world cup 150 top ranked paragliding pilots of all over the world participating along
-                            with 500 free flying pilots. This was a great opportunity for many local paragliding pilots
-                            to show their skills to world.
-                            <br>
-                            <br>
-                            Bir Billing provides the option of Paragliding, Trekking to Himachali tribal villages,
-                            Mountain Biking, Angling and Camping.
+                            Inclusions
                             <br>
                             <ul>
                                 <li>
-                                    ako
+
+                                 Local travel
                                 </li>
-                                <li>as</li>
+                                <li>
+
+                                    Stays
+                                </li>
+                                <li>
+
+                                    Meals
+                                </li>
+                                <li>
+
+                                    Trip leader
+                                </li>
+                                <li>
+
+                                    Group of 12
+                                </li>
                             </ul>
                             <button>
                                 <a href="./assets/FD_KASHMIR 5N6D_(EX-SRINAGAR).pdf"
                                     download="FD_KASHMIR 5N6D_(EX-SRINAGAR).pdf"> <i class="fa-solid fa-download"></i>
                                     Download Itinerary</a>
                             </button>
+                            <div id="book-container"></div>
                         </div>
                         <div data-category="option2">This is Intinerary data.
                             <h4>Day 0</h4>
@@ -218,7 +224,7 @@
                         Voluptatem, molestias rerum.p>
                 </div> -->
             </div>
-            <div>
+            <!-- <div>
                 <div class="contvbox">
                     <h2>The Reality of Trip</h2>
                     <br>
@@ -242,14 +248,8 @@
                         Whatsapp
                     </button>
                     <br>
-                    <!-- <button style="background-color: plum;">
-                        <i class="fa-solid fa-quote-left"></i>
-                        Get Quote
-                        <i class="fa-solid fa-quote-right"></i>
-                    </button>
-                    <br> -->
                 </div>
-            </div>
+            </div> -->
         </section>
         <section class="category">
             <h2>Gallery</h2>
@@ -619,5 +619,26 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/app.js"></script>
+
+<script type="text/javascript" src='https://logout.world/static/widget/logout-booking.js'></script>
+<script>
+    (function (widget) {
+        widget.setConfig({
+            eventSlug: "kashmir-a-nature-lovers-dream",
+            placement: "#book-container",
+            customClass: "btn-custom",
+            btnId: "logout-bnb",
+            downloadBtnId: "logout-download-button",
+            enquiryBtnId: "logout-enquiry-button",
+            showEverything: true,
+            onlyButton: false,
+            showItineraryButton: true,
+            showEnquiryButton: true,
+            bookNowButtonColor: "#28a745",
+            itineraryButtonColor: "#dc3545",
+        });
+        widget.init();
+    })(logout.widget);
+</script>
 
 </html>

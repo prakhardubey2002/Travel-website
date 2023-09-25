@@ -699,7 +699,7 @@ body {}
 }
 
 .description {
-    min-height: 80vh;
+    min-height: 50vh;
     width: 100vw;
     margin: 2rem 0;
     display: flex;
@@ -723,7 +723,7 @@ body {}
 }
 
 .description .contbox {
-    max-width: 60vw;
+    /* max-width: 60vw; */
 }
 
 .description .contbox .bar {

@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initially show the "Description" content
   filterData('option1');
 });
-var countDownDate = new Date("Sep 25, 2023 00:00:00").getTime();
+var countDownDate = new Date("Oct 10, 2023 00:00:00").getTime();
 // Update the count down every 1 second
 var current = new Date().getTime();
 
