@@ -67,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="bannersticky">
+        <!-- <section class="bannersticky">
             <div class="rowx">
 
 
@@ -103,7 +103,7 @@
                     </a>
                 </button>
             </span>
-        </section>
+        </section> -->
         <section class="qualitycard">
             <h2>Reason to trust Us</h2>
             <div class="cardscontainer">
@@ -124,16 +124,16 @@
                     </p>
                 </div>
                 <div class="qcard">
-                    <lottie-player class="animation" src="./lottiejson/co-traveller.json" background="transparent" speed="1"
-                        loop autoplay></lottie-player>
+                    <lottie-player class="animation" src="./lottiejson/co-traveller.json" background="transparent"
+                        speed="1" loop autoplay></lottie-player>
                     <h2>Co-travellers Filtering</h2>
                     <p>Group trips are fun when you have like-minded fellow travelers. We assure that through a
                         well-defined filtering process at all the stages, beginning from marketing, sales to operations.
                     </p>
                 </div>
                 <div class="qcard">
-                    <lottie-player class="animation" src="./lottiejson/hassle-free.json" background="transparent" speed="1"
-                        loop autoplay></lottie-player>
+                    <lottie-player class="animation" src="./lottiejson/hassle-free.json" background="transparent"
+                        speed="1" loop autoplay></lottie-player>
                     <h2>Hassle free experience</h2>
                     <p>Our entire team puts rigorous efforts on ground to make sure your experience is a top notch one.
                         Awesome stays, friendly drivers, hospitable ground staff is ready to make your trip the most
@@ -171,7 +171,7 @@
                             <ul>
                                 <li>
 
-                                 Local travel
+                                    Local travel
                                 </li>
                                 <li>
 
@@ -195,7 +195,7 @@
                                     download="FD_KASHMIR 5N6D_(EX-SRINAGAR).pdf"> <i class="fa-solid fa-download"></i>
                                     Download Itinerary</a>
                             </button>
-                            <div id="book-container"></div>
+
                         </div>
                         <div data-category="option2">This is Intinerary data.
                             <h4>Day 0</h4>
@@ -439,7 +439,27 @@
                 &copy; 2023 Byko Inc. All rights reserved.
             </p>
         </section>
-
+        <div id="book-container"></div>
+        <script type="text/javascript" src='https://logout.world/static/widget/logout-booking.js'></script>
+        <script>
+            (function (widget) {
+                widget.setConfig({
+                    eventSlug: "kashmir-a-nature-lovers-dream",
+                    placement: "#book-container",
+                    customClass: "btn-custom",
+                    btnId: "logout-bnb",
+                    downloadBtnId: "logout-download-button",
+                    enquiryBtnId: "logout-enquiry-button",
+                    showEverything: true,
+                    onlyButton: false,
+                    showItineraryButton: true,
+                    showEnquiryButton: true,
+                    bookNowButtonColor: "#28a745",
+                    itineraryButtonColor: "#dc3545",
+                });
+                widget.init();
+            })(logout.widget);
+        </script>
 
 
 
@@ -620,25 +640,6 @@
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/app.js"></script>
 
-<script type="text/javascript" src='https://logout.world/static/widget/logout-booking.js'></script>
-<script>
-    (function (widget) {
-        widget.setConfig({
-            eventSlug: "kashmir-a-nature-lovers-dream",
-            placement: "#book-container",
-            customClass: "btn-custom",
-            btnId: "logout-bnb",
-            downloadBtnId: "logout-download-button",
-            enquiryBtnId: "logout-enquiry-button",
-            showEverything: true,
-            onlyButton: false,
-            showItineraryButton: true,
-            showEnquiryButton: true,
-            bookNowButtonColor: "#28a745",
-            itineraryButtonColor: "#dc3545",
-        });
-        widget.init();
-    })(logout.widget);
-</script>
+
 
 </html>
