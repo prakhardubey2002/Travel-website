@@ -185,7 +185,7 @@ body {}
 }
 
 .body .homesection .nav img {
-    width: 38px;
+    width: 68px;
     margin-right: 0.6rem;
 }
 
@@ -823,7 +823,7 @@ body {}
 
 .filtered-data button {
     padding: 10px 20px;
-    background: #3086a7;
+    background: #5fca49;
     border: 1px solid var(--Primary);
     border-radius: 36px;
     color: #fff;
